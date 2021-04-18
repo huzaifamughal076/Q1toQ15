@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -57,23 +58,23 @@ public class MainActivity extends AppCompatActivity {
     String[] Q9spinner={"Liberal / Left","Centrist","Consevative / Right","Other"};
     String[] Q9otherspinner={"Liberal / Left","Centrist","Consevative / Right","Other"};
 
-    String[] Q10spinner={};
-    String[] Q10otherspinner={};
+    String[] Q10spinner={"Kissing inParis","Kissing in the tent,in woods"};
+    String[] Q10otherspinner={"Kissing inParis","Kissing in the tent,in woods"};
 
-    String[] Q11spinner={};
-    String[] Q11otherspinner={};
+    String[] Q11spinner={"Yes","No"};
+    String[] Q11otherspinner={"Yes","No"};
 
-    String[] Q12spinner={};
-    String[] Q12otherspinner={};
+    String[] Q12spinner={"Yes","No"};
+    String[] Q12otherspinner={"Yes","No"};
 
-    String[] Q13spinner={};
-    String[] Q13otherspinner={};
+    String[] Q13spinner={"Yes","No"};
+    String[] Q13otherspinner={"Yes","No"};
 
-    String[] Q14spinner={};
-    String[] Q14otherspinner={};
+    String[] Q14spinner={"Always","Usually","Rarely","Never"};
+    String[] Q14otherspinner={"Always","Usually","Rarely","Never"};
 
-    String[] Q15spinner={};
-    String[] Q15otherspinner={};
+    String[] Q15spinner={"Yes","No"};
+    String[] Q15otherspinner={"Yes","No"};
 
 
     ListView spinner1,otherspinner1;
@@ -230,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
 
 // Mine Spinner1
 
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Q1spinner) {
             @NonNull
             @Override
@@ -237,6 +239,8 @@ public class MainActivity extends AppCompatActivity {
                 View view = super.getView(position, convertView, parent);
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
+
+                mytext.setTextColor(Color.BLACK);
 
 
                 return view;
@@ -287,6 +291,8 @@ public class MainActivity extends AppCompatActivity {
                 View view = super.getView(position, convertView, parent);
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
+
+                mytext.setTextColor(Color.BLACK);
 
 
                 return view;
@@ -346,6 +352,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -396,6 +403,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -425,6 +433,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q2main.setVisibility(View.GONE);
+                        Q3main.setVisibility(View.VISIBLE);
                         q3main();
 
                     }
@@ -451,6 +460,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -501,6 +511,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -530,6 +541,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q3main.setVisibility(View.GONE);
+                        Q4main.setVisibility(View.VISIBLE);
                         q4main();
 
                     }
@@ -561,6 +573,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -611,6 +624,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -640,6 +654,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q4main.setVisibility(View.GONE);
+                        Q5main.setVisibility(View.VISIBLE);
                         q5main();
 
                     }
@@ -671,6 +686,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -721,6 +737,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -750,6 +767,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q5main.setVisibility(View.GONE);
+                        Q6main.setVisibility(View.VISIBLE);
                         q6main();
 
                     }
@@ -780,6 +798,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -830,6 +849,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -859,6 +879,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q6main.setVisibility(View.GONE);
+                        Q7main.setVisibility(View.VISIBLE);
                         q7main();
 
                     }
@@ -885,6 +906,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -935,6 +957,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -965,6 +988,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q7main.setVisibility(View.GONE);
+                        Q8main.setVisibility(View.VISIBLE);
                         q8main();
                     }
                 },2000);
@@ -990,6 +1014,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1040,6 +1065,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1069,6 +1095,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q8main.setVisibility(View.GONE);
+                        Q9main.setVisibility(View.VISIBLE);
                         q9main();
                     }
                 },2000);
@@ -1094,6 +1121,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1144,6 +1172,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1173,6 +1202,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q9main.setVisibility(View.GONE);
+                        Q10main.setVisibility(View.VISIBLE);
                         q10main();
 
                     }
@@ -1199,6 +1229,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1249,6 +1280,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1278,6 +1310,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q10main.setVisibility(View.GONE);
+                        Q11main.setVisibility(View.VISIBLE);
                         q11main();
 
                     }
@@ -1304,6 +1337,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1354,6 +1388,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1383,6 +1418,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q11main.setVisibility(View.GONE);
+                        Q12main.setVisibility(View.VISIBLE);
                         q12main();
 
                     }
@@ -1408,6 +1444,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1458,6 +1495,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1487,6 +1525,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q12main.setVisibility(View.GONE);
+                        Q13main.setVisibility(View.VISIBLE);
                         q13main();
 
                     }
@@ -1513,6 +1552,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1563,6 +1603,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1572,7 +1613,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                otherspinner11.setVisibility(View.VISIBLE);
+                otherspinner13.setVisibility(View.VISIBLE);
             }
         },2000);
 
@@ -1593,6 +1634,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q13main.setVisibility(View.GONE);
+                        Q14main.setVisibility(View.VISIBLE);
                         q14main();
 
                     }
@@ -1619,6 +1661,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1669,6 +1712,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1699,6 +1743,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
 
                         Q14main.setVisibility(View.GONE);
+                        Q15main.setVisibility(View.VISIBLE);
                         q15main();
 
                     }
@@ -1725,6 +1770,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }
@@ -1775,6 +1821,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView mytext = (TextView) view.findViewById(android.R.id.text1);
 
+                mytext.setTextColor(Color.BLACK);
 
                 return view;
             }

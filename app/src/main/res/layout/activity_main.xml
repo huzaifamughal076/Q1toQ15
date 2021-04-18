@@ -80,8 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:orientation="horizontal"
-            tools:ignore="RtlHardcoded">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -125,34 +124,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            >
+           <LinearLayout
+               android:id="@+id/nothing"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/otherimg"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_marginHorizontal="12dp"
+                   android:src="@drawable/hands" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/usershape"
+                   android:padding="5dp">
 
-                <TextView
-                    android:id="@+id/other"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Your ideal person would say"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                   <TextView
+                       android:id="@+id/other"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Your ideal person would say"
+                       android:textColor="@color/white"
+                       android:textSize="16sp" />
 
 
-            </LinearLayout>
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
 
             <ListView
                 android:visibility="gone"
@@ -171,7 +179,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -264,6 +272,9 @@
 
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <ListView
             android:id="@+id/spinner2"
@@ -276,34 +287,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:visibility="gone"
+
 
             >
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
 
-                <TextView
-                    android:id="@+id/other2"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
 
 
+                </LinearLayout>
             </LinearLayout>
+
 
             <ListView
                 android:visibility="gone"
@@ -322,7 +340,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -415,6 +433,9 @@
 
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <ListView
             android:id="@+id/spinner3"
@@ -427,12 +448,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:visibility="gone"
 
             >
-
-            <de.hdodenhof.circleimageview.CircleImageView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/otherimg3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -455,6 +479,7 @@
 
 
             </LinearLayout>
+            </LinearLayout>
 
             <ListView
                 android:visibility="gone"
@@ -473,7 +498,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -567,6 +592,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner4"
             android:layout_width="wrap_content"
@@ -578,41 +607,47 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other4"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
+
 
             <ListView
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/otherspinner4"
-                />
+                android:id="@+id/otherspinner4"/>
 
         </LinearLayout>
 
@@ -624,7 +659,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -718,6 +753,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner5"
             android:layout_width="wrap_content"
@@ -729,31 +768,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg5"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other5"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -777,7 +822,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -870,6 +915,9 @@
 
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <ListView
             android:id="@+id/spinner6"
@@ -882,35 +930,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg6"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other6"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
-
             <ListView
                 android:visibility="gone"
                 android:layout_width="wrap_content"
@@ -928,7 +982,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1022,6 +1076,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner7"
             android:layout_width="wrap_content"
@@ -1033,34 +1091,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg7"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other7"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
+
+
+
 
             <ListView
                 android:visibility="gone"
@@ -1078,7 +1146,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1172,6 +1240,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner8"
             android:layout_width="wrap_content"
@@ -1183,31 +1255,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other8"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
@@ -1228,7 +1307,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1322,6 +1401,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner9"
             android:layout_width="wrap_content"
@@ -1333,31 +1416,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg9"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other9"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -1378,7 +1467,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1429,7 +1518,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="Choose the better romantic activity:"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -1472,6 +1561,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner10"
             android:layout_width="wrap_content"
@@ -1483,34 +1576,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg10"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
-
-                <TextView
-                    android:id="@+id/other10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
 
 
-            </LinearLayout>
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/otherimg10"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_marginHorizontal="12dp"
+                   android:src="@drawable/hands" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/usershape"
+                   android:padding="5dp">
+
+                   <TextView
+                       android:id="@+id/other10"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Your ideal person would say:"
+                       android:textColor="@color/white"
+                       android:textSize="16sp" />
+
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
 
             <ListView
                 android:visibility="gone"
@@ -1530,7 +1631,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1581,7 +1682,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="Is jealousy healthy in a relationship?"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -1624,6 +1725,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner11"
             android:layout_width="wrap_content"
@@ -1635,35 +1740,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg11"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other11"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
-
             <ListView
                 android:visibility="gone"
                 android:layout_width="wrap_content"
@@ -1680,7 +1791,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1731,7 +1842,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="Do you like scary movies?"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -1774,6 +1885,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner12"
             android:layout_width="wrap_content"
@@ -1785,31 +1900,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg12"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other12"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -1830,7 +1951,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -1881,7 +2002,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="Do you often find yourself worring\nabout things that you haveno\ncontrol over?"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -1924,6 +2045,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner13"
             android:layout_width="wrap_content"
@@ -1935,35 +2060,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg13"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other13"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
-
             <ListView
                 android:visibility="gone"
                 android:layout_width="wrap_content"
@@ -1980,7 +2111,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -2031,7 +2162,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="How often are you open with your\nfeelings?"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -2074,6 +2205,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner14"
             android:layout_width="wrap_content"
@@ -2085,31 +2220,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg14"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other14"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -2130,7 +2271,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <RelativeLayout
@@ -2181,7 +2322,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Which best describes your political beliefs?"
+            android:text="Are you an aspiring\nactor/artist/writer/or other creative\ntype?"
             android:textColor="#686565"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -2224,6 +2365,10 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <ListView
             android:id="@+id/spinner15"
             android:layout_width="wrap_content"
@@ -2235,34 +2380,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="horizontal"
-            android:visibility="gone"
-
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/otherimg15"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginHorizontal="12dp"
-                android:src="@drawable/hands" />
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/usershape"
-                android:padding="5dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/other15"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherimg15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/hands" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ideal person would say:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:background="@drawable/usershape"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/other15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your ideal person would say:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
+
 
             <ListView
                 android:visibility="gone"
